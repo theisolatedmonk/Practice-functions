@@ -6,11 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 
 <body>
-
+    <div class="box">
+        <div class="counter">Counter</div>
+        <div class="pluse-count-minus">
+            <button><span id="pluse">+</span></button> <span id="count">0</span> <button><span id="minus">-</span></button>
+        </div>
+        <button id="reset">Reset</button>
+    </div>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vw;
+        }
+        
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            font-size: x-large;
+            font-weight: bold;
+            width: 200px;
+        }
+        
+        .pluse-count-minus {
+            display: flex;
+            gap: 50px;
+        }
+    </style>
 </body>
 
 </html>
