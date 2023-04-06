@@ -78,3 +78,49 @@
 // Function using Object;
 
 // Area Object function
+
+
+const aria = {
+    circle: function(r) {
+        const area = 3.14 * r * r;
+        return area;
+    },
+    square: function(l) {
+        const sqrarea = l * l;
+        return sqrarea;
+    },
+    rectangle: function(l, w) {
+        const area = l * w;
+        return area;
+    },
+    triangle: function(a, b, c) {
+        const s = (a + b + c) / 2;
+        const area = Math.sqrt(s * (s - a) * (s - b) * (s - c))
+        return area;
+    }
+}
+console.log(aria.circle(5))
+
+// Perimeter Object function;
+
+const perimeters = {
+    circle: function(r) {
+        const perimeter = 2 * 3.14 * r
+        return perimeter;
+
+    },
+    square: function(l) {
+        const perime = 4 * l;
+        return perime;
+    },
+    rectangle: function(l, w) {
+        const perimeter = 2 * (l + w);
+        return perimeter;
+    },
+    triangle: function(a, b, c) {
+        const perimeter = a + b + c
+        return perimeter;
+    }
+
+}
+console.log(aria.circle(5))
