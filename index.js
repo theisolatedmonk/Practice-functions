@@ -136,20 +136,24 @@ resetBtn.addEventListener("click", function() {
 
 });
 
-function pluses() {
+
+
+pluse.addEventListener("click", function() {
+    count.innerHTML = addCount()
+})
+
+minus.addEventListener("click", function() {
+    count.innerHTML = subtractCount()
+})
+
+
+
+function addCount() {
     countNumer = ++countNumer;
     return countNumer
 }
 
-function minuses() {
+function subtractCount() {
     countNumer = --countNumer;
     return countNumer
 }
-
-pluse.addEventListener("click", function() {
-    count.innerHTML = pluses()
-})
-
-minus.addEventListener("click", function() {
-    count.innerHTML = minuses()
-})
